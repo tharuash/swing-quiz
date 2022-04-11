@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.mavenproject1.quiz.model;
+
+/**
+ *
+ * @author tharindu
+ */
+public class Player {
+    
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
+    private Integer currentScore;
+    
+    public Player(){
+    }
+
+    public Player(Integer id, String name, String email, String password, Integer currentScore) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.currentScore = currentScore;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getCurrentScore() {
+        return currentScore;
+    }
+
+    public void setCurrentScore(Integer currentScore) {
+        this.currentScore = currentScore;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" + "id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", currentScore=" + currentScore + '}';
+    }
+
+}
